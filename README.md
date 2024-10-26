@@ -1,6 +1,6 @@
 ## TravelTally
 
-[TravelTally](https://your-expense-tracker-app-link.com) - A budgeting and expense management tool for Travel Expenses.
+[TravelTally](https://travel-budget-liart.vercel.app/) - A budgeting and expense management tool for Travel Expenses.
 
 TravelTally is a travel budget planner that allows users to efficiently manage their finances by tracking expenses related to their trips, including airfare, lodging, and activities. Users can monitor their budgets, view how much money they have spent compared to their allocated budget, and receive assistance from a built-in Copilot assistant. The application features a clean, responsive UI built with TailwindCSS, while leveraging React and Redux for robust state management, along with CopilotKit and Shadcn-UI for enhanced functionality and styling.
 
@@ -21,13 +21,13 @@ TravelTally is a travel budget planner that allows users to efficiently manage t
 
 ## App Link
 
-- [TravelTally Live Demo](https://your-expense-tracker-app-link.com)
-- [Repo](https://github.com/yourusername/expense-tracker)
+- [TravelTally Live Demo](https://travel-budget-liart.vercel.app/)
+- [Repo](https://github.com/Zedoman/Travel_Budget)
+
 ## Bonus Points
 
 Link to any bonus activities you did such as solving GitHub Issues or posting to Twitter, Dev.to, Medium, etc.
 Dev.to[https://dev.to/avradeep_nayak_fa8d5f6995] -> https://dev.to/avradeep_nayak_fa8d5f6995/event-planner-3k2
-Medium -> https://medium.com/@12346arjo/event-planner-abfba6a2eadb
 
 ## Screenshots
 

@@ -93,6 +93,29 @@ header h1 {
   margin-bottom: 2rem;
 }
 
+.relative:hover .tooltip {
+  opacity: 1; /* Make the tooltip visible on hover */
+}
+
+.tooltip {
+  display: none; /* Hidden by default */
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px; /* Space between the label and tooltip */
+  padding: 10px; /* Padding inside the tooltip */
+  background-color: #4a5568; /* Dark gray background */
+  color: white; /* White text */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  white-space: normal; /* Allow text to wrap */
+  top: -100%;
+}
+
+
+
 .formulario input[type="text"],
 .formulario input[type="number"] {
   background-color: var(--gris-claro);

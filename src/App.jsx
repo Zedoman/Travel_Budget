@@ -13,6 +13,7 @@ import {
   setIsValidBudgetAction,
 } from "./Redux/Reducers/ExpensesReducer";
 import  CopilotBot  from "./Components/Copilot/CopilotBot";
+import Footer from "./Components/Footer";
 
 function App() {
   const dispatch = useDispatch();
@@ -106,6 +107,7 @@ function App() {
   };
 
   return (
+    <>
     <div className={modal ? "fijar" : ""}>
       <Header isValidBudget={isValidBudget} />
       {isValidBudget && (
@@ -134,7 +136,10 @@ function App() {
         />
       )}
       <CopilotBot className="fixed bottom-14 left-5 bg-black text-white p-4 rounded-lg shadow-lg" />
+      
     </div>
+    <Footer className="fixed bottom-1 bg-black text-white p-4 rounded-lg shadow-lg"/>
+    </>
   );
 }
 

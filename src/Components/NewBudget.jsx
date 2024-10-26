@@ -5,6 +5,7 @@ import {
   setIsValidBudgetAction,
 } from "../Redux/Reducers/ExpensesReducer";
 import Message from "./Message";
+import Footer from "./Footer";
 
 const NewBudget = () => {
   const dispatch = useDispatch();
@@ -37,13 +38,12 @@ const NewBudget = () => {
   return (
     <div className="contenedor-presupuesto contenedor shadow-lg p-10 bg-white rounded-lg">
       <form onSubmit={handleBudget} className="formulario space-y-6">
-        <legend className="text-3xl text-center text-blue-600 uppercase border-b-2 border-blue-600 pb-4">
-          Define your budget
-        </legend>
-
-        <div className="campo grid space-y-4">
-          <label className="text-blue-500 text-2xl text-center" htmlFor="">
-            Define budget
+        <div className="campo grid space-y-4 relative">
+          <label className="text-blue-500 text-2xl text-center">
+            Define Your Travel Budget
+            <div className="tooltip hidden absolute z-10 left-1/2 transform -translate-x-1/2 mt-2 p-4 bg-gray-800 text-white text-sm rounded-md shadow-lg transition-opacity duration-300">
+              Take the first step toward a memorable journey by setting your travel budget today! By doing so, you’ll pave the way for an enriching and enjoyable travel experience that aligns with your financial goals. Start planning, and let your travel dreams become a reality!
+            </div>
           </label>
           <input
             type="number"
@@ -52,6 +52,7 @@ const NewBudget = () => {
             placeholder="Add your budget"
             value={budgetForm}
             onChange={handleInputChange}
+            onFocus={() => setMessage("")} // Clear message on input focus
           />
         </div>
 
@@ -63,6 +64,13 @@ const NewBudget = () => {
 
         {message && <Message type="error">{message}</Message>}
       </form>
+
+      {/* Tooltip show on hover */}
+      <style jsx>{`
+        .campo:hover .tooltip {
+          display: block; /* Show tooltip on hover */
+        }
+      `}</style>
     </div>
   );
 };
