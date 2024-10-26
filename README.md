@@ -27,7 +27,7 @@ TravelTally is a travel budget planner that allows users to efficiently manage t
 ## Bonus Points
 
 Link to any bonus activities you did such as solving GitHub Issues or posting to Twitter, Dev.to, Medium, etc.
-Dev.to[https://dev.to/avradeep_nayak_fa8d5f6995] -> https://dev.to/avradeep_nayak_fa8d5f6995/event-planner-3k2
+Dev.to[https://dev.to/avradeep_nayak_fa8d5f6995] -> https://dev.to/avradeep_nayak_fa8d5f6995/traveltally-58hc
 
 ## Screenshots
 
